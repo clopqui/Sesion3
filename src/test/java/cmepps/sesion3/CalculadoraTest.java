@@ -45,7 +45,7 @@ public class CalculadoraTest {
     
     @org.junit.jupiter.api.Test
     public void testResta() {
-        assertEquals(-1, Calculadora.Resta(2,3));
+        assertEquals(-1, Calculadora.resta(2,3));
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -59,7 +59,7 @@ public class CalculadoraTest {
     
     @org.junit.jupiter.api.Test
     public void testDivide() {
-        assertEquals(0, Calculadora.Divide(2,3));
+        assertEquals(0, Calculadora.divide(2,3));
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }

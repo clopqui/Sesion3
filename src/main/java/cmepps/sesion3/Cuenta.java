@@ -4,6 +4,7 @@
  */
 package cmepps.sesion3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,9 +14,8 @@ import java.util.List;
 public class Cuenta {
     private String numero;
     private String titular;
-    List <Movimiento> mMovimientos;
+    List <Movimiento> mMovimientos = new ArrayList<>();
     private double saldo;
-    
     public Cuenta(double saldo){
         super();
         this.saldo=saldo;

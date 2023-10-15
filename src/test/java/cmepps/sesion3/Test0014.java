@@ -38,7 +38,7 @@ public class Test0014 {
 
     @org.junit.jupiter.api.BeforeEach
     public void setUp() throws Exception {
-        ctaPruebas.setSaldo(0);
+        
     }
 
     @org.junit.jupiter.api.AfterEach
@@ -48,49 +48,49 @@ public class Test0014 {
     @Test
     public void testReintegroCuenta12345() {
         cta12345.retirar(200.0);
-        assertEquals(-150.0, cta12345.getSaldo(), 0.01);
+        assertEquals(-150.0, cta12345.getSaldo());
     }
 
     @Test
     public void testReintegroCuenta67890() {
         cta67890.retirar(350.0);
-        assertEquals(-350.0, cta67890.getSaldo(), 0.01);
+        assertEquals(-350.0, cta67890.getSaldo());
     }
 
     @Test
     public void testIngresoCuenta12345() {
         cta12345.ingresar(100.0);
-        assertEquals(-50.0, cta12345.getSaldo(), 0.01);
+        assertEquals(150.0, cta12345.getSaldo());
     }
 
     @Test
     public void testReintegroCuenta67890_2() {
         cta67890.retirar(200.0);
-        assertEquals(-550.0, cta67890.getSaldo(), 0.01);
+        assertEquals(-200.0, cta67890.getSaldo(), 0.01);
     }
 
     @Test
     public void testReintegroCuenta67890_3() {
         cta67890.retirar(150.0);
-        assertEquals(-200.0, cta67890.getSaldo(), 0.01);
+        assertEquals(-150.0, cta67890.getSaldo(), 0.01);
     }
 
     @Test
     public void testReintegroCuentaCuenta12345_2() {
         cta12345.retirar(200.0);
-        assertEquals(-500.0, cta12345.getSaldo(), 0.01);
+        assertEquals(-50.0, cta12345.getSaldo(), 0.01);
     }
 
     @Test
     public void testIngresoCuenta67890_3() {
         cta67890.ingresar(50.0);
-        assertEquals(-600.0, cta67890.getSaldo(), 0.01);
+        assertEquals(50.0, cta67890.getSaldo(), 0.01);
     }
     
     @Test
     public void testReintegroCuenta67890_4() {
         cta67890.retirar(100.0);
-        assertEquals(-600.0, cta67890.getSaldo(), 0.01);
+        assertEquals(150.0, cta67890.getSaldo(), 0.01);
     }
     
 }

@@ -17,8 +17,6 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class Test0014 {
     
-    static Cuenta ctaPruebas;
-    
     static Cuenta cta12345;
     static Cuenta cta67890;
     

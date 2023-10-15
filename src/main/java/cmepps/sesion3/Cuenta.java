@@ -36,8 +36,11 @@ public class Cuenta {
     }
     
     public void retirar(double cantidad){
-        this.saldo = this.saldo - cantidad;
-        mMovimientos.add(new Movimiento(cantidad,Movimiento.Signo.H));
+        double operacion = this.saldo - cantidad;
+        if(operacion > 0){
+            this.saldo = operacion;
+            mMovimientos.add(new Movimiento(cantidad,Movimiento.Signo.H));
+        }
     }
     
 }

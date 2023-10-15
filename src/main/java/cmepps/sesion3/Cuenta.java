@@ -4,12 +4,16 @@
  */
 package cmepps.sesion3;
 
+import java.util.List;
+
 /**
  *
  * @author clopq
  */
 public class Cuenta {
-    
+    private String numero;
+    private String titular;
+    List <Movimiento> mMovimientos;
     private double saldo;
     
     public Cuenta(double saldo){

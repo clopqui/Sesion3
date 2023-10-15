@@ -19,10 +19,12 @@ public class Cuenta {
     public Cuenta(double saldo){
         super();
         this.saldo=saldo;
+        mMovimientos.add(new Movimiento(saldo,Movimiento.Signo.D));
     }
 
     public void ingresar(double cantidad) {
         this.saldo = this.saldo + cantidad;
+        mMovimientos.add(new Movimiento(cantidad,Movimiento.Signo.D));
     }
 
     public double getSaldo() {
@@ -35,6 +37,7 @@ public class Cuenta {
     
     public void retirar(double cantidad){
         this.saldo = this.saldo - cantidad;
+        mMovimientos.add(new Movimiento(cantidad,Movimiento.Signo.H));
     }
     
 }

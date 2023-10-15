@@ -19,6 +19,9 @@ public class CuentaTest {
     
     static Cuenta ctaPruebas;
     
+    static Cuenta cta12345;
+    static Cuenta cta67890;
+    
     public CuentaTest() {
     }
     
@@ -66,5 +69,6 @@ public class CuentaTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
+    
     
 }
